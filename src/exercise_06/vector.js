@@ -13,4 +13,21 @@ export default class Vector {
   // class.
 
   // PLEASE DELETE THIS LINE AND ADD YOUR IMPLEMENTATION HERE
+
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  static plus(v1, v2) {
+    return new Vector(v1.x + v2.x, v1.y + v2.y);
+  }
+
+  static minus(v1, v2) {
+    return new Vector(v1.x - v2.x, v1.y - v2.y);
+  }
+
+  distance() {
+    return Math.sqrt(this.x * this.x + this.y * this.y);
+  }
 }
