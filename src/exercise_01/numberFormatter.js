@@ -7,6 +7,16 @@ export default function formatNumber(number, option) {
   //
   // * Please implement the function and pass all the tests in format_number_spec.js.
   // * Please do NOT modify the signature of the function.
+  let result = `${number}`;
+  if (result.indexOf('.') !== -1) {
+    result = parseFloat(result).toFixed(2);
+  } else {
+    result += '.00';
+  }
 
-  throw new Error('Please delete this line and implement the function');
+  if (option) {
+    result = `$ ${result}`;
+  }
+
+  return result;
 }
