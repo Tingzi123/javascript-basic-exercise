@@ -2,7 +2,7 @@ import { range, sum } from '../../../src/exercise_03/rangeAndSum';
 
 // Please do NOT modifiy the code in this file.
 describe('for range and sum', () => {
-  it('should create array within range', () => {
+  fit('should create array within range', () => {
     expect(range(0, 0)).toEqual([]);
     expect(range(1, 1)).toEqual([]);
     expect(range(0, 5)).toEqual([0, 1, 2, 3, 4]);
