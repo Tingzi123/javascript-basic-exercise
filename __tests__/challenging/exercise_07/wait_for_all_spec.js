@@ -11,7 +11,7 @@ describe('for wait for all', () => {
     });
   }
 
-  it('should throw if not all elements are promises', () => {
+  fit('should throw if not all elements are promises', () => {
     const notAllElementsArePromises = [Promise.resolve(), 2];
     expect(() => waitForAll(...notAllElementsArePromises)).toThrowError('Not all elements are promises.');
   });
